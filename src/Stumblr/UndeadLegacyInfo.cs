@@ -18,11 +18,15 @@ namespace Stumblr
 	///
 	/// Of UL's version markers only the ones on <c>H_UndeadLegacy</c> are trustworthy: the
 	/// <c>[BepInPlugin]</c> attribute and the <c>pluginVersion</c> literal. UL's assembly version is
-	/// hardcoded 1.0.0.0 and its ModInfo.xml lags reality - it reads 2.7.01 on a 2.7.32 install.
+	/// hardcoded 1.0.0.0 and its ModInfo.xml lags reality - it reads 2.7.01 on a 2.7.33 install.
 	/// </summary>
 	internal static class UndeadLegacyInfo
 	{
 		private const string AssemblyName = "UndeadLegacy";
+
+		/// <summary>Newest Undead Legacy build this mod was verified against. Advisory only; the
+		/// <c>info</c> command prints it next to the detected build.</summary>
+		internal const string TestedTo = "2.7.33";
 
 		internal static bool Present;
 
@@ -61,7 +65,7 @@ namespace Stumblr
 			}
 
 			Version = raw;
-			Status = raw;
+			Status = "Detected v" + raw + " / Tested up to v" + TestedTo;
 			Log.Out(Patches.LogPrefix + "Undead Legacy " + raw + " detected (from " + DetectedSource
 				+ "). This mod patches only vanilla types that UL inherits, so no UL code is touched.");
 		}
