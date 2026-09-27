@@ -26,7 +26,7 @@ namespace Stumblr
 
 		/// <summary>Newest Undead Legacy build this mod was verified against. Advisory only; the
 		/// <c>info</c> command prints it next to the detected build.</summary>
-		internal const string TestedTo = "2.7.35";
+		internal const string TestedTo = "2.7.36";
 
 		internal static bool Present;
 
