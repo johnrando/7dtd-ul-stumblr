@@ -10,7 +10,7 @@ own stumble animations:
   can go down. Walkers are unmoved.
 - **A tire in its path.** Put a tire down and for a few seconds it is a trip hazard. Under Undead
   Legacy every tire in the world can be picked up, so carry one.
-- **A door in its face**, with [DoorSlammer](../ul-doorslammer) installed: a zombie caught in a
+- **A door in its face**, with [DoorSlammer](../7dtd-ul-doorslammer) installed: a zombie caught in a
   slammed door can go down too.
 
 **Undead Legacy is not required** and nothing of UL's is modified, but the mod is built with UL in
